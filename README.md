@@ -1,64 +1,114 @@
-﻿Student Feedback Review System
-A full-stack web application for collecting and reviewing student feedback with JWT authentication, role-based dashboards, analytics, CSV export, and AI-style feedback summaries.
+Student Feedback Review System
 
-Tech Stack
-Frontend: React + Vite + Tailwind CSS + Axios + Chart.js
-Backend: Flask + SQLAlchemy + SQLite
-Authentication: JWT + bcrypt
+This is a web-based Student Feedback Review System developed to collect and manage feedback from students.
+
+The system helps students submit their feedback and allows the feedback to be stored and reviewed in an organized way.
+
+Features
+
+Student feedback form
+
+Submit feedback easily
+
+Store feedback in the database
+
+Review submitted feedback
+
+Simple and user-friendly interface
+
+Separate sections for managing feedback
+
+Technologies Used
+
+Python
+
+Flask
+
+HTML
+
+CSS
+
+JavaScript
+
+SQLite
+
 Project Structure
-backend/
-  app.py
-  models.py
-  requirements.txt
-  routes/
-frontend/
-  src/
-    components/
-    context/
-    lib/
-    pages/
-Backend Setup
-cd backend
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
+
+app.py - Main application file
+
+templates/ - HTML pages
+
+static/ - CSS, JavaScript and other static files
+
+database.db - SQLite database
+
+How to Run
+
+1. Clone the repository
+
+git clone <your-repository-link>
+cd student-feedback-review-system
+
+2. Install Flask
+
+pip install flask
+
+3. Run the project
+
 python app.py
-Backend runs at http://127.0.0.1:5000.
 
-Frontend Setup
-cd frontend
-npm install
-npm run dev
-Frontend runs at http://127.0.0.1:5173.
+4. Open in browser
 
-Sample Credentials
-Admin
-Username: admin
-Password: admin123
-Student
-Username: alice
-Password: student123
-Student
-Username: brian
-Password: student123
-API Endpoints
-POST /api/register
-POST /api/login
-GET /api/feedback
-POST /api/feedback
-GET /api/admin/feedback
-DELETE /api/admin/delete/:id
-GET /api/admin/export
-Features Included
-Student signup and login
-Admin login
-JWT-protected API routes
-Password hashing using bcrypt
-Feedback submission with anonymous option
-Student feedback history
-Admin filtering, delete, export, charts, and statistics
-Responsive Tailwind UI with dark mode
-Seeded sample data for quick testing
-Notes
-The SQLite database file is created automatically at backend/feedback.db.
-Sample data is seeded on the first run only.
+Open:
+
+http://127.0.0.1:5000/
+
+How It Works
+
+The student opens the feedback form.
+
+The student enters the required details and feedback.
+
+The feedback is submitted through the website.
+
+The information is stored in the database.
+
+The submitted feedback can be reviewed and managed.
+
+What I Learned
+
+Through this project, I learned:
+
+Basics of Flask
+
+Creating web pages using HTML and CSS
+
+Connecting a web application with SQLite
+
+Handling form data
+
+Working with a database
+
+Creating a simple web-based application
+
+Future Improvements
+
+Add student login and admin login
+
+Add feedback categories
+
+Add rating system
+
+Add feedback search and filter
+
+Add charts for feedback analysis
+
+Improve the user interface
+
+Add email notifications
+
+Author
+
+Pranali Raundal
+
+Computer Engineering Student | Aspiring Software Developer
